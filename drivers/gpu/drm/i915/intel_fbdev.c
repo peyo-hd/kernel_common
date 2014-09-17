@@ -293,7 +293,7 @@ void intel_fbdev_initial_config(struct drm_device *dev)
 	struct drm_i915_private *dev_priv = dev->dev_private;
 
 	/* Due to peculiar init order wrt to hpd handling this is separate. */
-	drm_fb_helper_initial_config(&dev_priv->fbdev->helper, 32);
+	drm_fb_helper_initial_config(&dev_priv->fbdev->helper, 16);
 }
 
 void intel_fbdev_fini(struct drm_device *dev)
